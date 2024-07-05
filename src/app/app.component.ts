@@ -1,13 +1,16 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { PianoKeyComponent } from "./piano-key/piano-key.component";
+import { EnglishToneNames } from './constants/EnglishToneNames';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+    selector: 'app-root',
+    standalone: true,
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.scss',
+    imports: [RouterOutlet, PianoKeyComponent]
 })
 export class AppComponent {
   title = 'notio-spinoff';
+  englishToneNames = EnglishToneNames;
 }
