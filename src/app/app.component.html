@@ -225,11 +225,9 @@
           <clipPath id="a"><path fill="#fff" d="M0 0h982v239H0z" /></clipPath>
         </defs>
       </svg>
-
-      <piano-key [toneName]="englishToneNames.A"/>
-      <piano-key [toneName]="englishToneNames.B"/>
-      <piano-key [toneName]="englishToneNames.C"/>
-      <piano-key [toneName]="englishToneNames.D"/>
+@for(pianoKey of pianoKeys; track pianoKey){
+  <piano-key [toneName]="pianoKey"/>
+}
     </div>
     <div class="divider" role="separator" aria-label="Divider"></div>
   </div>

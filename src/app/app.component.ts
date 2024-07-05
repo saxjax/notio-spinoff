@@ -13,4 +13,5 @@ import { EnglishToneNames } from './constants/EnglishToneNames';
 export class AppComponent {
   title = 'notio-spinoff';
   englishToneNames = EnglishToneNames;
+  pianoKeys = [EnglishToneNames.A, EnglishToneNames.B, EnglishToneNames.C, EnglishToneNames.D, EnglishToneNames.E, EnglishToneNames.F, EnglishToneNames.G,EnglishToneNames.A,]
 }
