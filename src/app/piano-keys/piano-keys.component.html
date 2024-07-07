@@ -1,0 +1,3 @@
+@for(pianoKey of pianoKeys; track pianoKey){
+  <piano-key [toneName]="pianoKey" [color]="pianoKey === 10 ? pianoKeyColor.white : pianoKeyColor.black"/>
+}

@@ -1,1 +1,1 @@
-<button type="button" (click)="keyClicked()">{{toneName()}}</button>
+<button [ngClass]="{'black-key': color() === pianoKeyColor.black, 'white-key' : color() === pianoKeyColor.white }" type="button" (click)="keyClicked()">{{toneName()}}</button>
